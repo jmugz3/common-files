@@ -75,7 +75,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
+
 alias zshconfig=“vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias loadzsh="source ~/.zshrc"
@@ -87,6 +87,11 @@ export EDITOR="vi"
 
 setopt NO_BEEP
 setopt HIST_REDUCE_BLANKS
+
+ZSH_THEME_HG_PROMPT_PREFIX="%{$fg_bold[magenta]%}hg:(%{$fg[red]%}"
+ZSH_THEME_HG_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_DIRTY="%{$fg[magenta]%}) %{$fg[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_HG_PROMPT_CLEAN="%{$fg[magenta]%})"
 
 # helper functions
 function hiddenOn() { defaults write com.apple.Finder AppleShowAllFiles YES ; }
