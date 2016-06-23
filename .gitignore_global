@@ -1,1 +1,110 @@
 
+Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.bak
+*.pyc
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+downloads/
+dist/
+.npm
+
+# Images and Icons #
+###########
+.ico
+.svg
+.png
+.jpeg
+.jpg
+.ico
+.gif
+
+# Logs #
+######################
+*.log
+npm-debug.log*
+.node_repl_history
+
+# Databases #
+#############
+*.sql
+*.sqlite
+.mdf
+.ldf
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.directory
+.Trash-*
+.TemporaryItems
+.Trashes
+.tmp
+
+# IDE and Editor generated files #
+#################################
+.idea/
+.idea_modules/
+*.iws
+/out/
+.code/
+.vscode
+
+# Modules #
+##########################
+node_modules/
+bower_components/
+build/
+
+# Ext.js #
+##########
+.architect
+bootstrap.json
+build/
+ext/
+
+# Flask #
+############
+instance/
+.webassets-cache
+
+# Version Control #
+###################
+.hg/
+.hgignore
+.hgsigs
+.hgsub
+.hgsubstate
+.hgtags
+
+
+# Microsoft Office #
+####################
+~$*.doc*
+~$*.xls*
+*.xlk
+~$*.ppt*
+*.~vsdx
