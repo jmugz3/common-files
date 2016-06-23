@@ -76,8 +76,9 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig=“mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+alias zshconfig=“vim ~/.zshrc"
+alias ohmyzsh="cd ~/.oh-my-zsh"
+alias loadzsh="source ~/.zshrc"
 
 export NVM_DIR="/Users/jmugz3/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
