@@ -1,0 +1,11 @@
+[ui]
+username = Your Name <yourname@example.com>
+verbose = true
+ignore = ~/.hgignore_global
+
+[extensions]
+
+
+[alias]
+shortlog = log --template '{node|short} | {date|isodatesec} | {author|user}: {desc|strip|firstline}\n'
+log10 = shortlog --limit 10
