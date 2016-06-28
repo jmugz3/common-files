@@ -123,6 +123,7 @@ alias cd...='...'
 alias cd....='....'
 
 alias cl="clear"
+alias cll="cl && loadzsh"
 alias desktop="cd /Users/jmugz3/Desktop"
 alias fm='finger -m'
 alias cpv="rsync -poghb --backup-dir=/tmp/rsync -e /dev/null --progress --"
