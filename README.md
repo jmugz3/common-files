@@ -3,6 +3,8 @@
 
 Terminal
 * .zshrc_global
+* .zshrc
+* .vimrc
 
 Version Control
 * .gitignore_global
