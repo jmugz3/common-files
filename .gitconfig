@@ -1,0 +1,17 @@
+[core]
+	excludesfile = /Users/jmugab/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Jose Mugaburu
+	email = mugab686@gmail.com
+[alias]
+	st = status
+	last = log -1 HEAD
+	co = checkout
+	br = branch
+	ci = commit
