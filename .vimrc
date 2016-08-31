@@ -48,6 +48,7 @@ set background=dark
 set termencoding=utf-8
 set encoding=utf-8
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+set clipboard=unnamed
 nmap <leader>w :w!<cr>          " Fast Saving
 
 
