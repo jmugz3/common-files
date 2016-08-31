@@ -49,7 +49,7 @@ plugins=(git osx mercurial jmugz3)
 
 # User configuration
 
-export PATH="/Users/jmugz3/.rvm/gems/ruby-2.2.0/bin:/Users/jmugz3/.rvm/gems/ruby-2.2.0@global/bin:/Users/jmugz3/.rvm/rubies/ruby-2.2.0/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/jmugz3/.rvm/bin"
+export PATH=""
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 
-alias zshconfig=“vim ~/.zshrc"
+alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias loadzsh="source ~/.zshrc"
 
@@ -109,6 +109,12 @@ alias lh="ls -a | egrep "^\.""
 alias trash="rm -i"
 alias showhidden="defaults write com.apple.finder AppleShowAllFiles TRUE && killall Finder"
 alias hidehidden="defaults write com.apple.finder AppleShowAllFiles FALSE && killall Finder"
+alias restart="exec -l $SHELL"
+alias myip="curl -s checkip.amazonaws.com"
+alias myip2="dig +short myip.opendns.com @resolver1.opendns.com"
+alias myip3="wget http://ipinfo.io/ip -qO -"
+alias myip4="curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'"
+
 
 # sort files in current directory by the number of words they contain
 alias wordy="wc -w * | sort | tail -n10"
@@ -132,3 +138,7 @@ alias tmux='tmux -2 -u'
 
 alias k9='kill -9'
 alias -g G='| grep '
+
+#Redis
+alias redis-db="redis-cli INFO | grep ^db"
+alias redis-connected="redis-cli INFO | grep connected"
