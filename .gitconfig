@@ -1,17 +1,116 @@
 [core]
-	excludesfile = /Users/jmugab/.gitignore_global
+filemode = false
+editor = vim
+excludesfile = ~/.gitignore_global
+
 [difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+path =
+
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+trustExitCode = true
+
 [user]
-	name = Jose Mugaburu
-	email = mugab686@gmail.com
+name = Jose Mugaburu
+email = mugab686@gmail.com
+
 [alias]
-	st = status
-	last = log -1 HEAD
-	co = checkout
-	br = branch
-	ci = commit
+a = add -all
+last = log -1 HEAD
+co = checkout
+cob = checkout -b
+br = branch
+brs = branch -av
+brd = branch -D
+c = commit
+cm = commit -m
+ca = commit -a
+d = diff
+dc = diff --cached
+f = fetch
+fo = fetch origin
+g = grep -p
+l = log --oneline
+lg = log --oneline --graph --decorate
+ls = ls-files
+lsf = "!git ls-files | grep -i"
+m = merge
+mc = merge --abort
+mc = merge --continue
+ms = merge --skip
+ps = push
+psf = push -f
+psu = push -u
+pso = push origin
+psao = push --all origin
+psfo = push -f origin
+psom = push origin master
+psfom = push -f origin master
+psuom = push -u origin master
+p = pull
+pu = pull -u
+po = pull origin
+pup = pull upstream
+pom = pull origin master
+pupm= pull upstream master
+rb = rebase
+rba = rebase --abort
+rbc = rebase --continue
+rbi = rebase --interactive
+rbs = rebase --skip
+re = reset
+rh = reset HEAD
+reh = reset --hard
+rem = reset --mixed
+res = reset --soft
+rehh = reset --hard HEAD
+resh = reset --soft HEAD
+unstage = reset HEAD --
+r = remote
+ra = remote add
+rr = remote rm
+rv = remote -v
+rm = remote name
+rp = remote prune
+rs = remote show
+rao = remote add origin
+rau = remote add upstream
+rso = remote show origin
+rsu = remote show upstream
+rpo = remote prune origin
+rpu = remote prune upstream
+s = status
+sb = status -s -b
+sa = stash
+sac = stash clear
+sad = stash drop
+sal = stash list
+sap = stash pop
+sas = stash save
+saw = stash show
+t = tags
+ts = tags -l
+whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"'"
+human = name-rev --name-only --refs=refs/heads/*
+export = archive -o latest.tar.gz -9 --prefix=latest/
+start = git init && git add . && git commit -m \"starts git repo\"
+aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\       \t => \\2/' | sort
+
+[web]
+browser = google-chrome
+
+[color]
+ui = auto
+
+[diff]
+tool = vimdiff
+
+[difftool]
+prompt = false
+
+[url "https://github.com/"]
+insteadOf = gh:
+
+[push]
+default = simple
